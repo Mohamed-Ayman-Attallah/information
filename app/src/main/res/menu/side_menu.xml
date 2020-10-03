@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+            <item
+                android:id="@+id/nav_n"
+                android:icon="@drawable/ic_baseline_favorite_24"
+                android:title="إدعمنا" />
+
+    <group android:checkableBehavior="single">
+        <item android:title="حول التطبيق">
+
+        <menu>
+
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@drawable/ic_baseline_share_24"
+            android:title="شارك التطبيق" />
+
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_baseline_stars_24"
+            android:title="قيم التطبيق" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_baseline_send_24"
+            android:title="تواصل معنا" />
+
+        <item
+            android:id="@+id/nav_community"
+            android:icon="@drawable/ic_baseline_web_24"
+            android:title="تواصل معنا" />
+
+        </menu>
+
+        </item>
+
+
+        <item android:title="حول المطور">
+            <menu>
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_baseline_person_24"
+                    android:title="من أنا؟" />
+
+
+            </menu>
+        </item>
+
+
+    </group>
+
+</menu>

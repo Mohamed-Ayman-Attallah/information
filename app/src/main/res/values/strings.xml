@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">معلوماتك</string>
+    <string name="computer">معلومات عن البرمجه ومجالاتها</string>
+    <string name="since">معلومات عن العلماء وقصص حياتهم</string>
+    <string name="success">قصص عن النجاح وتحقيق الاهداف</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+</resources>
