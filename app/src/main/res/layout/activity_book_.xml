@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Book_Activity">
 
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="10dp"
@@ -23,7 +23,8 @@
                 android:layout_height="175dp"
                 android:background="#2d2d2d"
                 android:id="@+id/bookthmbnail"
-                android:scaleType="centerCrop"/>
+                android:scaleType="centerCrop"
+                tools:ignore="ContentDescription" />
 
 
             <TextView
@@ -31,6 +32,7 @@
                 android:layout_height="wrap_content"
                 android:text="Book Title"
                 android:layout_marginTop="10dp"
+                android:id="@+id/Title_Book"
                 android:textSize="10sp"
                 android:textStyle="bold"/>
 
@@ -38,6 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Category"
+                android:id="@+id/Category_Book"
                 android:background="#edecec"
                 android:padding="8dp"
                 android:layout_marginTop="10dp"/>
@@ -47,13 +50,35 @@
                 android:layout_height="wrap_content"
                 android:text="Description"
                 android:background="#edecec"
+                android:id="@+id/Description_Book"
                 android:textSize="16sp"
                 android:padding="8dp"
                 android:layout_marginTop="10dp"/>
 
-
-
         </LinearLayout>
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="تحميل الكتاب"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="قراءة الكتاب"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+</RelativeLayout>
